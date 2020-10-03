@@ -1,8 +1,18 @@
+/**
+ *
+ * @param {*} param0
+ */
+
 const httpGet = ({ url, headers = {} }) =>
 	fetch(url, {
 		method: 'GET',
 		headers,
 	}).then((response) => response.json());
+
+/**
+ *
+ * @param {*} param0
+ */
 
 const httpPost = ({ url, headers = {}, body = {} }) =>
 	fetch(url, {
@@ -11,6 +21,11 @@ const httpPost = ({ url, headers = {}, body = {} }) =>
 		body: JSON.stringify(body),
 	}).then((response) => response.json());
 
+/**
+ *
+ * @param {*} param0
+ */
+
 const httpPut = ({ url, headers = {}, body = {} }) =>
 	fetch(url, {
 		method: 'PUT',
@@ -18,6 +33,10 @@ const httpPut = ({ url, headers = {}, body = {} }) =>
 		body: JSON.stringify(body),
 	}).then((response) => response.json());
 
+/**
+ *
+ * @param {*} param0
+ */
 const httpDelete = ({ url, headers = {} }) =>
 	fetch(url, {
 		method: 'DELETE',
