@@ -1,6 +1,6 @@
 {
 	"name": "obten",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A minimal HTTP client for JavaScript applications running in the web browser.",
 	"main": "dist/index.min.js",
 	"scripts": {
