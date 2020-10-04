@@ -60,7 +60,7 @@ note: `url` and `body` are the required parameters.
 
 ```javascript
 obten
-	.post({
+	.delete({
 		url: '',
 	})
 	.then((data) => console.log(data));
