@@ -22,7 +22,7 @@ import obten from 'obten';
 
 ```javascript
 obten
-	.get({
+	.httpGet({
 		url: '',
 	})
 	.then((data) => console.log(data));
@@ -34,7 +34,7 @@ note: `url` is a required parameter.
 
 ```javascript
 obten
-	.post({
+	.httpPost({
 		url: '',
 		body: {},
 	})
@@ -47,7 +47,7 @@ note: `url` and `body` are the required parameters.
 
 ```javascript
 obten
-	.put({
+	.httpPut({
 		url: '',
 		body: {},
 	})
@@ -60,7 +60,7 @@ note: `url` and `body` are the required parameters.
 
 ```javascript
 obten
-	.delete({
+	.httpDelete({
 		url: '',
 	})
 	.then((data) => console.log(data));

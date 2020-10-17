@@ -1,12 +1,12 @@
 {
 	"name": "obten",
-	"version": "0.1.1",
+	"version": "1.0.0",
 	"description": "A minimal HTTP client for JavaScript applications running in the web browser.",
 	"main": "dist/index.min.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack",
-		"dev": "webpack"
+		"build": "cross-env NODE_ENV=production webpack",
+		"dev": "cross-env=NODE_ENV=development webpack"
 	},
 	"repository": {
 		"type": "git",
@@ -23,6 +23,7 @@
 	},
 	"homepage": "https://github.com/vyasriday/obten#readme",
 	"dependencies": {
+		"cross-env": "^7.0.2",
 		"dotenv": "^8.2.0"
 	},
 	"devDependencies": {
